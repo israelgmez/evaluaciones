@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+HTML    {BORDER-RIGHT: 0px; BORDER-TOP: 0px;BORDER-LEFT: 0px;BORDER-BOTTOM: 0px;padding:0px; margin:0px; font-family:Arial, helvetica, sans-serif;font-size:1em;color:#333333;}
+BODY    {width:100%;background-color: #F1F1F1;}
+TABLE   {font-size:0.95em; margin:1em;}
+TD, TH  {border:solid 1px #BFBFBF;}
+TD      {COLOR: #333;VERTICAL-ALIGN: top;padding:0.2em;}
+TH      {background-color: #3376ac;color: #ffffff;font-weight: bold;padding: 0.5em;}
+TH A	{COLOR: #fff;}
+IMG     {BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; max-width: 100%}
+CAPTION {font-weight: bold;}
+P {MARGIN-TOP: 0.6em; MARGIN-BOTTOM: 0px; TEXT-ALIGN: left}
+A       {COLOR: #333; TEXT-DECORATION: none}
+
+H1		{font-size: 1.2em;}
+H2		{font-size: 1.16em;}
+H3		{font-size: 1.12em;}
+H4		{font-size: 1.08em;}
+H5		{font-size: 1.05em;}
+H6		{font-size: 1.02em;}
+
+H3      {text-align:left;padding: 1.4em 0px 0px; COLOR: #333; LINE-HEIGHT: 1em}
+*       {margin:0;padding:0;}
+OL 		{list-style-image: none;}
+html,body	{height: 100%;}
+
+#body 		{ padding:0em 0.7em; min-width:1020px;min-height: 100%;position: relative;}
+
+
+.componente{clear:both;margin:1em 0;padding:0;background-color: #FFFFFF;border: 1px solid #DFE8F0;border-radius: 0.3em 0.3em 0.3em 0.3em;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);width:50%; float:left;margin:0;padding:0;}
+.topComponente	{min-height:30px;position:relative;color:#3376ac;padding: 0.5em;}
+.topComponente A {color: #3376ac;}
+.topComponente UL{padding:0 !important;display: inline-block;vertical-align: top;}
+.topComponente LI{list-style: none;margin:0;border-bottom:0 !important;display: inline-block;}
+.topComponente H2{display: inline-block;font-size:0.95em;margin:0;padding:0 0 0 0.5em;vertical-align: top; max-width: 76%;}
+.cuerpoComponente{border-top: 1px solid #DFE8F0;padding:0 0 0.5em;}
+.fondoComponente{text-align:left;}
+.cuerpoComponente UL{clear:both;margin:0;padding:0;list-style: none;}
+.cuerpoComponente A{font-size:0.9em;padding-left:3px;color:#333333;margin-right:0.3em;text-decoration:none;}
+.cuerpoComponente A:hover{color:#dc241f;text-decoration:underline;}
+.cuerpoComponente IMG	{vertical-align:middle;margin-right:0.5em;}
+.cuerpoComponente .noImage {background: none;margin: 0.5em;}

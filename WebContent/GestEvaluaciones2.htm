@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gestión de Evaluaciones</title> 
+<script src="js/utils.js"></script>
+<script type="text/javascript">
+function mostrarListadoEvaluaciones()
+{
+	document.getElementById("listadoEvaluaciones").innerHTML = formatearListadoEval(jsoneval);
+}
+</script>
+</head>
+<body>
+<div id="cabecera">
+<input type="button" onClick="mostrarListadoEvaluaciones();" value="Mostrar evaluaciones disponibles">
+</div>
+<div id="listadoEvaluaciones">
+</div>
+<div id="formularioEvaluacion" style="display:none">
+Código interno para la evaluación:<Br>
+<input type="text" id="idEvaluacion"><br>
+Número de objetivos en la evaluación:<Br>
+<input type="text" id="numObjetivos"><br>
+Nombre para la evaluación (Ej: Semana 1):<Br>
+<input type="text" id="nombreEvaluacion"><br>
+Descripción para la evaluación:<Br>
+<textarea id="descripcion"></textarea><br>
+<input id="btnGenerarEvaluacion" type="button" value="Generar Evaluación" onClick="generarEvaluacion();">
+<div id="cuestionarioEvaluacion" style="display:none"></div>
+</div>
+<div id="pie">
+<input type="button" value="Dar de alta Evaluación" onClick="nuevaEvaluacion();">
+<input type="button" onClick="history.back();" value="Volver al menú principal">
+</div>
+<script type="text/javascript">
+cargarListadoEvaluaciones();
+
+
+
+
+</script> 
+
+</body>
+</html>

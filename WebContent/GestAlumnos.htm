@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<title>Gestión de Evaluadores</title>
+<script src="js/utils.js"></script>
+<script type="text/javascript">
+function mostrarListadoAlumnos()
+{
+	document.getElementById("listadoAlumnos").innerHTML = formatearListadoAlumnos(jsonAlumnos);	
+}
+</script>
+</head>
+<body>
+<div id="cabecera" class="componente">
+<div class="topComponente">
+<h2>Formulario de Gestión de Alumnos de Prácticas</h2>
+<br>
+
+<input type="button" value="Mostrar alumnos registrados" onClick="mostrarListadoAlumnos();">
+</div>
+
+<div id="listadoAlumnos">
+</div>
+<div class="cuerpoComponente">
+<div id="formularioAlumno" style="visibility:hidden;display:none">
+<h1>Datos del alumno:</h1>
+Código IMEI del Alumno:<input type="text" value="" id="idAlumno"><br>
+Nombre:<input type="text" value="" id="nombre"><br>
+Apellidos:<input type="text" value="" id="apellidos"><br>
+Curso:<input type="text" value="" id="curso"><br>
+<h2>Asignación de cuestionarios:</h2>
+<div id="evaluaciones"></div>
+<input type="button" value="Registrar alumno" onClick="registrarAlumno();">
+</div>
+<div id="pie">
+<input type="button" value="Dar de alta nuevo Alumno" onClick="nuevoAlumno();">
+<input type="button" onClick="history.back();" value="Volver al menú principal">
+</div>
+</div>
+</div>
+<input type="hidden" id="jsonEvaluaciones">
+<input type="hidden" id="jsonAlumnos">
+<script type="text/javascript">
+cargarListadoEvaluaciones();
+cargarListadoAlumnos();
+console.log(document.getElementById("jsonAlumnos").value);
+</script>
+
+</body>
+</html>

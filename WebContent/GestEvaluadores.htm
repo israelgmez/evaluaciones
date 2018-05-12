@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gestión de Evaluadores</title>
+<script src="js/utils.js"></script>
+<script type="text/javascript">
+function mostrarListadoTutores()
+{
+	document.getElementById("listadoTutores").innerHTML = formatearListadoTutores(jsonTutores);	
+}
+</script>
+</head>
+<body>
+<div id="cabecera">
+<input type="button" value="Mostrar tutores registrados" onClick="mostrarListadoTutores();">
+</div>
+<div id="listadoTutores">
+</div>
+<div id="formularioEvaluador" style="display:none">
+Código IMEI: <input type="text" id="idTutor"><br>
+Nombre: <input type="text" id="nombre"><br>
+Apellidos: <input type="text" id="apellidos"><br>
+e-mail: <input type="text" id="email"><br>
+<input type="button" value="Registrar de alta Tutor" onClick="registrarTutor();"><br>
+</div>
+<div id="pie">
+<input type="button" value="Dar de alta Tutor" onClick="nuevoTutor();"><br>
+<input type="button" onClick="history.back();" value="Volver al menú principal">
+</div>
+<script type="text/javascript">
+cargarListadoEvaluaciones();
+cargarListadoAlumnos();
+cargarListadoTutores();
+</script>
+<input type="hidden" id="jsonTutores">
+<input type="hidden" id="jsonAlumnos">
+</body>
+</html>
